@@ -17,18 +17,18 @@ export class ProductmanagementServiceService {
   constructor(private httpclient : HttpClient) { }
   getAllProducts() : Observable<Product[]>{
     
-    return this.httpclient.get<GetResponseProducts>(this.baseUrl)
+    return this.httpclient.get<GetAllsProducts>(this.baseUrl)
     .pipe(map(response => response._embedded.products));
   }
   getAllProductCategory():Observable<ProductCategory[]>{
-    return this.httpclient.get<GetResponseProductsCategory>(this.baseDUrl)
+    return this.httpclient.get<GetAllsProductsCategory>(this.baseDUrl)
     .pipe(map(response => response._embedded.productCategories));
 
   }
 }
 
 
-  interface GetResponseProducts{
+  interface GetAllsProducts{
     _embedded :{
       products : Product[]
     }
@@ -36,7 +36,7 @@ export class ProductmanagementServiceService {
   
   }
   
-  interface GetResponseProductsCategory{
+  interface GetAllsProductsCategory{
     _embedded :{
       productCategories :ProductCategory[];
     }
