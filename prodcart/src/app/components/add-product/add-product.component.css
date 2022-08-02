@@ -34,7 +34,7 @@ label{
 }
 input[type="submit"]{
     color: white;
-    background-color: #000;
+    background-color: darkturquoise;
     width: 150px;
     font-family: sans-serif;
     border: none;
@@ -43,15 +43,15 @@ input[type="submit"]{
 }
 .nav{
 margin-top: 10px;
+width: 100%;
 /* border: 1px solid blue; */
 }
 .nav>div{
-    background-color: #000;
+    background-color: darkturquoise;
     /* border: 1px solid blue; */
 
     height: 60px;
-    max-width: 1000px;
-    margin: 0 auto;
+  width: 100%;
 }
 .nav>div>div{
     height: 100%;
@@ -69,8 +69,9 @@ ul{
 
 }
 ul li button{
-    background-color: #000;
-    color: white;
+    background-color: white;
+    color: black;
+    font-weight: bold;
     border: 1px solid white;
     display: flex;
     font-family: sans-serif;
